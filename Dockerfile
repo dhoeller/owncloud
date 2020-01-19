@@ -1,7 +1,4 @@
 #
-# NOTE: THIS DOCKERFILE IS GENERATED VIA "update.sh"
-#
-# PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
 FROM php:7.2-fpm
@@ -59,8 +56,8 @@ RUN set -ex; \
                 memcached \
                 redis
 
-ENV OWNCLOUD_VERSION 10.2.1
-ENV OWNCLOUD_SHA256 cc3929d1b0269122bbbf7a4e90f1d264e28e6d4352478e85ea51f8586bafc277
+ENV OWNCLOUD_VERSION 10.3.2
+ENV OWNCLOUD_SHA256 0af4429bd477b4d9f829c9a69b47bb855d22c4a36de7d3e402f3852c33223c33
 VOLUME /var/www/html
 
 RUN set -eux; \
